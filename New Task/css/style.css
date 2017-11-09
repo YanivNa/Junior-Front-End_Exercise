@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: #47ad87;
+}
+
+p{
+    color: white;
+}
+
+#container{
+    width: 50%;
+    top: 0px;
+    margin: -50px auto;
+    text-align: center;
+    height: 79%;
+}
+#emailImage{
+    height: 100px;
+    width: 100px;
+    margin-left: -6px;
+    margin-bottom: -10px;
+}
+
+#opening {
+    margin: auto;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 230px;
+    margin-left: 100px;
+}
+
+.speech-bubble {
+    position: relative;
+    width: 340px;
+    height: 252px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #dad5d5;
+    /* border: 8px solid #666; */
+    border: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 6px;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #888;
+    margin: -206px 0px 0px 258px;
+
+}
+
+.speech-bubble:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100px;
+/*  border: 25px solid;*/
+  border: none;
+  border-color: #666 transparent transparent #666;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #dad5d5;
+	border-left: 0;
+	margin-top: -80px;
+	margin-left: -20px;
+}
+
+input {
+    padding: 12px;
+    width: 80%;
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#userName{
+    background-image:url(/img/user.png); 
+    background-repeat: no-repeat; 
+    background-position: 235px 6px;
+    background-size: 25px;
+}
+
+#password{
+    background-image:url(/img/lock.png); 
+    background-repeat: no-repeat; 
+    background-position: 235px 6px;
+    background-size: 25px;
+}
+
+#submit{
+    background: #47ad87;
+    color: white;
+    width: 87%;
+}
+
+#lost{
+    color: #bdbdbd;
+}
+
+
+#loginArea p {
+    padding: -38px;
+    margin: -48px 0px 2px 0px;
+}
+
+
+.loading{
+    display:none;
+    width: 50px;
+    height:50px;
+    border: 5px solid #ccc;
+    border-top-color: #ff6a00;
+    border-radius: 100%;
+    position: fixed;
+    left: 223px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    animation: round 2s linear infinite;
+}
+
+
+@keyframes round{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+
+@media  screen  and  (max-width:959){
+    #container{
+        width: 100%;
+    }
+    #emailImage{
+    width: 100%;
+    }
+}
